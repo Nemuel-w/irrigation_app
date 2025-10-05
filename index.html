@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Irrigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen active">
+    <h1>🌿 My Farm</h1>
+    <button id="start-btn">Check Farm</button>
+  </div>
+
+  <!-- Main Frame -->
+  <div id="main-screen" class="screen">
+    <button class="back-btn" id="back-to-start">← Back</button>
+    <h2>Main Zones</h2>
+    <button class="zone-btn" data-zone="1">Zone 1</button>
+    <button class="zone-btn" data-zone="2">Zone 2</button>
+    <button class="zone-btn" data-zone="3">Zone 3</button>
+  </div>
+
+  <!-- Zone Detail Screen -->
+  <div id="zone-screen" class="screen">
+    <button class="back-btn" id="back-to-main">← Back</button>
+    <h2 id="zone-title">Zone 1 Condition</h2>
+    <div id="moisture-display">
+      Moisture Level: <span id="moisture-level">Loading...</span>
+    </div>
+    <div class="actions">
+      <button id="irrigate-btn">💧 Irrigate</button>
+      <button id="water-btn">🚿 Water</button>
+    </div>
+  </div>
+
+  <!-- JavaScript connection -->
+  <script src="script.js"></script>
+</body>
+</html>
